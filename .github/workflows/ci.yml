@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Test go code
         uses: actions/checkout@master
-        run: go test ./...
+        with:
+          args: go test ./...
 
   build:
     name: Build
